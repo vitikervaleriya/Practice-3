@@ -104,49 +104,32 @@ travel(destination="Paris", days=5)
 travel(days=10, destination="Tokyo")
 
 
-
-def animal_name(animal, name):
-   print("Name of the", animal, "is", name)
-
-animal_name(name = "Lili", animal = "cat")
-animal_name(animal = "dog", name = "Gyf")
-
-
-
-
-
-
-
 # Positional Arguments
 
 def my_function(animal, name):
-  print("I have a", animal)
-  print("My", animal + "'s name is", name)
-
+    print("I have a", animal)
+    print("My", animal + "'s name is", name)
 my_function("dog", "Buddy")
 
-# Mixing Positional and Keyword Arguments
+""""""""""""""""""""""""""
 
-def my_function(animal, name, age):
-  print("I have a", age, "year old", animal, "named", name)
+def favorite_food(person, food):
+    print(person, "loves", food)
+favorite_food("Anna", "pizza")
 
-my_function("dog", name = "Buddy", age = 5)
+""""""""""""""""""""""""""
 
+def car_info(make, model):
+    print("Car make:", make)
+    print("Car model:", model)
+car_info("Toyota", "Corolla")
 
-#Passing Different Data Types
+""""""""""""""""""""""""""
 
-def my_function(fruits):
-  for fruit in fruits:
-    print(fruit)
+def travel(destination, days):
+    print("I will travel to", destination)
+    print("It will take", days, "days")
+travel("Paris", 5)
 
-my_fruits = ["apple", "banana", "cherry"]
-my_function(my_fruits)
-
-def my_function(person):
-  print("Name:", person["name"])
-  print("Age:", person["age"])
-
-my_person = {"name": "Emil", "age": 25}
-my_function(my_person)
 
 

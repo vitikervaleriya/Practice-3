@@ -42,3 +42,54 @@ print("Book pages:", b1.pages)
 del b1 
 
 
+
+
+# Modifying and deleting object properties
+
+class Car:
+    def __init__(self, brand):
+        self.brand = brand
+
+car1 = Car("Toyota")
+
+car1.brand = "BMW"  # Modify property
+print(car1.brand)  # BMW
+
+""""""""""""""""""""""""""
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+p1 = Person("Alice")
+
+del p1.name  # Delete property
+# print(p1.name)  # Error
+
+""""""""""""""""""""""""""
+
+class Book:
+    def __init__(self, title, pages):
+        self.title = title
+        self.pages = pages
+
+b1 = Book("Python Basics", 200)
+
+b1.title = "Advanced Python"
+b1.pages = 350
+
+print(b1.title)  
+print(b1.pages)
+
+""""""""""""""""""""""""""
+
+class Laptop:
+    def __init__(self, brand, price):
+        self.brand = brand
+        self.price = price
+
+l1 = Laptop("Dell", 1200)
+
+del l1.price  # Delete only price
+print(l1.brand)  
+

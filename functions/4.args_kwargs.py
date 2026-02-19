@@ -1,4 +1,4 @@
-"""# Arbitrary Arguments - *args
+# Arbitrary Arguments - *args
 
 def sum_numbers(*nums):
     total = 0
@@ -59,7 +59,7 @@ def show_all(**data):
 
 show_all(city="Paris", country="France", language="French")
 show_all(job="Developer", experience=5)
-"""
+
 """"""""""""""""""""""""""
 
 def user_profile(username, **details):
